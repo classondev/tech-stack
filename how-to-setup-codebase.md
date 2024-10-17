@@ -27,5 +27,8 @@ Organiza folders
   - config: config, constant
   - types
  
- Note:  
+ Note:
+  - Dont edit or add custom code/ component in components/ui or lib/utils.ts because when you update shadcn you may override your code.
+  - If you need to copy code from different sources (not import whole package) then try not to mix up with current code. Keep the code from different sources in stand alone folder. For example, you need to copy some types in @classon/types then put them in @classon/types folder and in your @/types folder, add a file and export * from @classon/types.
+ 
   
